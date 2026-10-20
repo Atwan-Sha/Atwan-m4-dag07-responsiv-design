@@ -50,38 +50,6 @@ Kontrollera att inga bilder sticker ut och att formulärfälten inte är för br
 
 Öppna din sida på en riktig mobil (Live Server visar en nätverksadress, eller använd enhetsläget om du inte kan). Skriv vad du lade märke till.
 
-## AI-spåret (nivå 2: Specificera och jämför)
-
-**Låt AI gissa vad som går sönder, och kontrollera** (cirka 25 minuter, efter att du gjort din egen lösning)
-
-Du beskriver vad som ska byggas, AI föreslår kod, du testar, jämför och förstår. AI kan inte se din sida. Den gissar utifrån koden. Du kontrollerar gissningarna i verkligheten.
-
-Regler: egen lösning först, du ska kunna förklara varje rad, och du loggar i `docs/ai-logg.md` i `mitt-projekt`. Reglerna finns i `AI-REGLER.md` i `mitt-projekt`.
-
-1. Be AI lista vad som troligen går sönder på 320 px (prompten nedan).
-2. Öppna DevTools på 320 px och kontrollera varje punkt.
-3. Sortera: träff, miss (AI missade något du hittar), falskt larm.
-4. Rätta de verkliga felen själv.
-5. Logga antal träffar, missar och falsklarm.
-
-Prompt att utgå från:
-
-```
-Vilka delar av denna CSS kommer troligen
-att gå sönder på 320 px bredd?
-Lista med motivering.
-
-[klistra in CSS här]
-```
-
-**Kontrollera med:**
-
-- DevTools enhetsläge, 320 px.
-- Kontrollera horisontell scroll.
-- Zooma till 400 procent på desktop.
-
-**I ditt projekt:** Gör samma granskning av ditt projekt.
-
 ## Kontrollista: så vet du att du är klar
 
 - [ ] Viewport-metataggen finns i båda filerna.
@@ -90,17 +58,12 @@ Lista med motivering.
 - [ ] Layouten ändras på ett vettigt sätt mellan mobil, mellanläge och desktop.
 - [ ] Du har testat i DevTools enhetsläge på minst tre bredder.
 - [ ] Du har pushat till din fork och skickat in länken.
-- [ ] Du har gjort AI-uppgiften och skrivit en post i `docs/ai-logg.md`.
 
 ## Tips om du fastnar
 
 - Horisontell scroll? Något element har fast bredd. Hitta det med DevTools: håll musen över elementen.
 - Media query verkar inte gälla? Kolla klamrarna och att den ligger EFTER grundreglerna i filen.
 - Brytpunkter ska bestämmas av när *innehållet* går sönder, inte av specifika enheter.
-
-## Ditt projekt: Dagens steg i `mitt-projekt`
-
-Efter övningen här jobbar du vidare i ditt eget projekt (din design från modul 3). Dagens steg står i `PROJEKTSTEG.md` i ditt repo `mitt-projekt`, under **Dag 7**. Det är där ditt riktiga arbete växer. Övningen här är träningsbanan.
 
 ## Inlämning
 
@@ -109,8 +72,7 @@ Efter övningen här jobbar du vidare i ditt eget projekt (din design från modu
 I formuläret fyller du i:
 
 1. Länk till din fork av det här repot.
-2. Länk till ditt `mitt-projekt`.
-3. Reflektion: Vid vilken bredd gick din sida sönder först, och hur löste du det?
+2. Reflektion: Vid vilken bredd gick din sida sönder först, och hur löste du det?
 
 ## Vill du mer? (frivilligt)
 
