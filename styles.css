@@ -29,15 +29,6 @@
 	--font-size-hero: 1.125rem;
 	--line-height-hero: 1.6;
 }
-/* 
-*Kontrastkontroll:
-*Rubrik och nav mot header-bakgrund = 10:1
-*(röd accent-färg för nav mot brun headerbakgrund ger 1.06:1, funkar ej)
-*Rubrik mot hero-bakgrund = 11:1
-*Brödtext mot hero-bakgrund = 12.6:1
-*Text mot knapp-bakgrund = 9.5:1
-*Pristext mot kortbakgrund = 9.5:1
-*/
 
 *,
 *::before,
@@ -76,8 +67,6 @@ h3 {
 	line-height: var(--line-height-heading);
 }
 
-/* *Flexbox, Motivering:
-* Ändras endast horizontellt på en linje, med eventuell wrap (eller hamburger meny) */
 header {
 	background-color: var(--color-header);
 	padding: 16px 24px;
@@ -139,10 +128,6 @@ main {
 	margin: 8px auto;
 }
 
-/* *Grid-Layout, Motivering:
-*Skalar smidigare ned när skärmbredden minskas, 
-*oavsett hur många items/kort det är i menyn, 
-*utan media-query, med bara 60% kod jämfört med flexbox! */
 .menu-list {
 	max-width: 1100px;
   margin: 16px 0;
@@ -151,7 +136,7 @@ main {
   grid-auto-rows: 1fr;
 	gap: 20px;
 }
-/* *Flexbox-Layout i article då den bara skalas vertikalt */
+
 article {
 	background-color: var(--color-card-background);
 	border: 1px solid var(--color-card-border);
@@ -183,9 +168,6 @@ article img {
   width: auto;
 }
 
-/* *Grid-Layout, Motivering:
-* Delar upp bild, text och knapp (väldigt olika storlekar) 
-*i tydliga kvadranter utan behov av flex-container-divs */
 #about {
   display: grid;
   grid-template-columns: 1fr 1fr;
